@@ -23,13 +23,6 @@
 
 \input{glyphtounicode}
 
-% -------------------- FONT OPTIONS --------------------
-% sans-serif
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% serif
-% \usepackage{charter}
-
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -121,47 +114,72 @@
     \faIcon{linkedin}
     \href{https://www.linkedin.com/in/albin-babu-varghese/}{\underline{linkedin.com/in/albin-babu-varghese}} $  $
     \faIcon{envelope}
-    \href{mailto:albinbabuvarghese@gmail.com}{\underline{albinbabuvarghese@gmail.com}} $  $
+    \href{mailto:mail@albinbabuvarghese.com}{\underline{mail@albinbabuvarghese.com}} $  $
     \faIcon{phone}
     \href{tel:+14162002942}{\underline{416-200-2942}}
 \end{center}
 
-% -------------------- SUMMARY --------------------
-\section{Summary}
-Dedicated Computer Science graduate with a keen interest in software development and digital transformation. Proficient in frontend development, blockchain, and Linux environments. Currently pursuing a PG Diploma in Applied AI, aiming to contribute innovative solutions in a technology-driven workspace. 
-
-% -------------------- PROJECTS --------------------
-\section{Projects}
-    \resumeSubHeadingListStart
-
-        % ... Other projects ...
-
+% -------------------- EXPERIENCE --------------------
+\section{Open-Source Experience}
         \resumeProjectHeading
-        {\textbf{DApp Certification (Blockchain-Based Solution)} $|$ \footnotesize\emph{Ethereum, React.js, Solidity, Node.js, web3.js} $|$ \href{https://github.com/albus-droid/dapp-certification}{\underline{GitHub Repo}}}{}
+        {\textbf{LensKit MAP Module} $|$ \footnotesize\href{https://github.com/lenskit/lkpy}{lenskit/lkpy} $|$ \href{https://github.com/lenskit/lkpy/pull/739}{GitHub PR \#739}}{}
         \resumeItemListStart
-            \resumeItem{Developed a blockchain-based solution for educational certificate verification.}
-            \resumeItem{Key role in the development lifecycle from requirement gathering to implementation.}
+            \resumeItem{Designed and implemented the Mean Average Precision metric in \texttt{\_map.py}, adding 11 commits and integrating a new module under \texttt{lenskit.metrics.ranking}.}
+            \resumeItem{Refactored rank computation to use \texttt{recs.ranks()}, added comprehensive test cases, and achieved 88\% patch coverage.}
+            \resumeItem{Addressed maintainer feedback on linting/format with pre-commit, resulting in merge into \texttt{main} on April~29,~2025.}
+        \resumeItemListEnd
+        
+       \resumeProjectHeading
+        {\textbf{Bun TextDecoder Fatal Option Fix} $|$ \footnotesize\href{https://github.com/oven-sh/bun}{oven-sh/bun} $|$ \href{https://github.com/oven-sh/bun/pull/19378}{GitHub PR \#19378}}{}
+        \resumeItemListStart
+            \resumeItem{Fixed the \texttt{fatal} option in \texttt{TextDecoder} to correctly coerce 0, 1, \texttt{null}, and string values using \texttt{.toBoolean()}, resolving issue \#19362.}
+            \resumeItem{Added and formatted tests in \texttt{test/js/web/encoding/text-decoder.test.js}, ensuring CI coverage and uniform test formatting.}
+            \resumeItem{Merged into \texttt{main} on April~30,~2025 after multiple reviewer approvals and passing all CI checks.}
         \resumeItemListEnd
 
-
         \resumeProjectHeading
-        {\textbf{EAid Health (Android Application)} $|$ \footnotesize\emph{Java, XML, Firebase, Android SDK} $|$ }{}
+        {\textbf{Matplotlib Pie Error Fix} $|$ \footnotesize\href{https://github.com/matplotlib/matplotlib}{matplotlib/matplotlib} $|$ \href{https://github.com/matplotlib/matplotlib/pull/30019}{GitHub PR \#30019}}{}
         \resumeItemListStart
-            \resumeItem{Co-developed an Android app for disease diagnosis based on symptoms.}
-            \resumeItem{Involved in database design and app development, utilizing Java, XML, and Firebase.}
-            \resumeItem{Focused on creating a user-friendly interface and ensuring seamless integration of front-end elements with back-end functionalities.}
+            \resumeItem{Updated \texttt{axes.\_pie} to raise a \texttt{ValueError} when all wedge sizes are zero, preventing a NaN-to-integer conversion error as described in issue \#30007.}
+            \resumeItem{Added a test in \texttt{test\_axes.py} covering the all-zero case, ensuring the new error path is fully exercised.}
+            \resumeItem{Merged into \texttt{main} on May~6,~2025 after linting fixes via pre-commit and passing all CI checks; included in the v3.11.0 milestone.}
         \resumeItemListEnd
 
-        % ... Other projects ...
-
+        \resumeProjectHeading
+        {\textbf{Gitattributes Update} $|$ \footnotesize\href{https://github.com/rust-lang/rustc_codegen_gcc/}{rust-lang/rustc\_codegen\_gcc} $|$ \href{https://github.com/rust-lang/rustc_codegen_gcc/pull/659}{GitHub PR \#659}}{}
+        \resumeItemListStart
+            \resumeItem{Added a \texttt{.gitattributes} file to treat \texttt{Cargo.lock} as text and normalize end-of-line characters, enabling GitHub to display diffs by default.}
+            \resumeItem{Merged into \texttt{master} on May~1,~2025 after two commits and passing all CI checks.}
+        \resumeItemListEnd
     \resumeSubHeadingListEnd
+%----------------------PROJECTS----------------------
+\section{Projects}
+\resumeSubHeadingListStart
+
+  \resumeProjectHeading
+    {\textbf{TESV In-Game Coordinate Scraper} $|$ \footnotesize\emph{Python, \texttt{pymem}} $|$ \href{https://github.com/albus-droid/tesv-ingame-coordinates}{\underline{GitHub Repo}}}{}
+  \resumeItemListStart
+    \resumeItem{Implemented a Python script to read real-time player coordinates (X, Y) and world state from Skyrim’s memory.}
+    \resumeItem{Output JSON‐formatted telemetry at one‐second intervals, including timestamp, coordinates, and Tamriel state.}
+    \resumeItem{Managed memory offsets and process attachment via the \texttt{pymem} library for robust data extraction.}
+  \resumeItemListEnd
+\resumeProjectHeading
+    {\textbf{DApp Certification} $|$ \footnotesize\emph{Ethereum, React.js, Solidity, Node.js, web3.js} $|$ \href{https://github.com/albus-droid/dapp-certification}{\underline{GitHub Repo}}}{}
+  \resumeItemListStart
+    \resumeItem{Developed a blockchain‐based solution for educational certificate verification.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
 
 % -------------------- EDUCATION --------------------
 \section{Education}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {George Brown College, Toronto}{Expected 2024}
+          {Seneca Polytechnic, Toronto}{Expected 2025}
+          {PG Diploma in Cloud Architecture and Administration}{}
+    
+    \resumeSubheading
+      {George Brown College, Toronto}{2024}
       {PG Diploma in Applied AI Solutions Development}{}
       
     \resumeSubheading
@@ -174,46 +192,18 @@ Dedicated Computer Science graduate with a keen interest in software development
 
     \vspace{-4pt}
 
-    \subsection{Coursework and Achievements}
-      \textbf{Courses:} Data Science, Soft Computing, Machine Learning, Web Technologies \\
-      \textbf{Relevant Achievements:} High performance in Computer Labs, Strong academic record in Computer Science during Senior Secondary Education
-
   \resumeSubHeadingListEnd
-
 
 % -------------------- SKILLS --------------------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-    
-     \textbf{Languages}{: Bash, C/C++, Python, Java, JavaScript, HTML/CSS, \LaTeX} \\
-     
-     \textbf{Tools}{: Linux, Ethereum, React.js, Solidity, Node.js, web3.js, Java, XML, Firebase, SQL, Tableau, Azure, Travis CI, Git, Jenkins, Docker} \\
-     
-     \textbf{Libraries/Frameworks}{: NumPy, SciPy, TensorFlow, Flask, Pandas} \\
-     
-     \textbf{Soft Skills}{: Strong communication, problem-solving, and analytical skills. Experience in developing, testing, and debugging software applications. Ability to work effectively in team environments.}
-     
+     \textbf{Languages}: Python, Rust, JavaScript, Elisp, Bash, C, \LaTeX \\
+     \textbf{Libraries/Frameworks}: NumPy, Matplotlib \\
+     \textbf{Tools}: Git, FitHub Actions, Terraform, Ansible, Docker
     }}
- \end{itemize}
+\end{itemize}
 
- % -------------------- EXPERIENCE --------------------
-\section{Experience}
- \resumeSubHeadingListStart
-  \resumeProjectHeading
-          {\textbf{Fleming Embedded Software Solutions, India} $|$ \footnotesize\emph{Intern}\vspace{8pt}}{{2020}}
-          {\small{Developed and refined a user-centric Android application through comprehensive bug testing and collaboration with cross-functional teams, enhancing functionality and ensuring high-quality software deliverables in a Linux environment}}
-\resumeSubHeadingListEnd 
+ 
 % -------------------- VOLUNTEERING --------------------
-\section{Volunteering}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-    
-     \textbf{Kerala Flood Relief}{: Assisted in resource allocation and aid distribution, demonstrating strong organizational and team collaboration skills.} \\
-     
-     \textbf{Webpage Development for Dialysis Patients}{: Developed a webpage for patient registration and payment gateway integration, showcasing technical proficiency and commitment to social causes.}
-     
-    }}
- \end{itemize}
-
 \end{document}
