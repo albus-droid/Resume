@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -122,7 +122,7 @@
 % -------------------- EXPERIENCE --------------------
 \section{Open-Source Experience}
         \resumeProjectHeading
-        {\textbf{LensKit MAP Module} $|$ \footnotesize\href{https://github.com/lenskit/lkpy}{lenskit/lkpy} $|$ \href{https://github.com/lenskit/lkpy/pull/739}{GitHub PR \#739}}{}
+        {\textbf{LensKit MAP Module} $|$ \footnotesize\href{https://github.com/lenskit/lkpy}{lenskit/lkpy} $|$ \href{https://github.com/lenskit/lkpy/pull/739}{\underline{GitHub PR \#739}}}{}
         \resumeItemListStart
             \resumeItem{Designed and implemented the Mean Average Precision metric in \texttt{\_map.py}, adding 11 commits and integrating a new module under \texttt{lenskit.metrics.ranking}.}
             \resumeItem{Refactored rank computation to use \texttt{recs.ranks()}, added comprehensive test cases, and achieved 88\% patch coverage.}
@@ -130,7 +130,7 @@
         \resumeItemListEnd
         
        \resumeProjectHeading
-        {\textbf{Bun TextDecoder Fatal Option Fix} $|$ \footnotesize\href{https://github.com/oven-sh/bun}{oven-sh/bun} $|$ \href{https://github.com/oven-sh/bun/pull/19378}{GitHub PR \#19378}}{}
+        {\textbf{Bun TextDecoder Fatal Option Fix} $|$ \footnotesize\href{https://github.com/oven-sh/bun}{oven-sh/bun} $|$ \href{https://github.com/oven-sh/bun/pull/19378}{\underline{GitHub PR \#19378}}}{}
         \resumeItemListStart
             \resumeItem{Fixed the \texttt{fatal} option in \texttt{TextDecoder} to correctly coerce 0, 1, \texttt{null}, and string values using \texttt{.toBoolean()}, resolving issue \#19362.}
             \resumeItem{Added and formatted tests in \texttt{test/js/web/encoding/text-decoder.test.js}, ensuring CI coverage and uniform test formatting.}
@@ -138,15 +138,23 @@
         \resumeItemListEnd
 
         \resumeProjectHeading
-        {\textbf{Matplotlib Pie Error Fix} $|$ \footnotesize\href{https://github.com/matplotlib/matplotlib}{matplotlib/matplotlib} $|$ \href{https://github.com/matplotlib/matplotlib/pull/30019}{GitHub PR \#30019}}{}
+        {\textbf{Matplotlib Pie Error Fix} $|$ \footnotesize\href{https://github.com/matplotlib/matplotlib}{matplotlib/matplotlib} $|$ \href{https://github.com/matplotlib/matplotlib/pull/30019}{\underline{GitHub PR \#30019}}}{}
         \resumeItemListStart
             \resumeItem{Updated \texttt{axes.\_pie} to raise a \texttt{ValueError} when all wedge sizes are zero, preventing a NaN-to-integer conversion error as described in issue \#30007.}
             \resumeItem{Added a test in \texttt{test\_axes.py} covering the all-zero case, ensuring the new error path is fully exercised.}
             \resumeItem{Merged into \texttt{main} on May~6,~2025 after linting fixes via pre-commit and passing all CI checks; included in the v3.11.0 milestone.}
         \resumeItemListEnd
 
+          \resumeProjectHeading
+            {\textbf{VSCode-Python Extension Activation} $|$ \footnotesize\href{https://github.com/microsoft/vscode-python}{microsoft/vscode-python} $|$ \href{https://github.com/microsoft/vscode-python/pull/25025}{\underline{GitHub PR \#25025}}}{}
+          \resumeItemListStart
+            \resumeItem{Fixed issue \#25016 by adding `pylock.toml` to `activationEvents` in \texttt{package.json}, following PEP 751 naming conventions.}
+            \resumeItem{Implemented a regex-based activation so the extension auto-activates on matching files.}
+            \resumeItem{Collaborated with VSCode-Python maintainers, secured multi-reviewer approvals, and merged on May 7, 2025.}
+          \resumeItemListEnd
+
         \resumeProjectHeading
-        {\textbf{Gitattributes Update} $|$ \footnotesize\href{https://github.com/rust-lang/rustc_codegen_gcc/}{rust-lang/rustc\_codegen\_gcc} $|$ \href{https://github.com/rust-lang/rustc_codegen_gcc/pull/659}{GitHub PR \#659}}{}
+        {\textbf{Gitattributes Update} $|$ \footnotesize\href{https://github.com/rust-lang/rustc_codegen_gcc/}{rust-lang/rustc\_codegen\_gcc} $|$ \href{https://github.com/rust-lang/rustc_codegen_gcc/pull/659}{\underline{GitHub PR \#659}}}{}
         \resumeItemListStart
             \resumeItem{Added a \texttt{.gitattributes} file to treat \texttt{Cargo.lock} as text and normalize end-of-line characters, enabling GitHub to display diffs by default.}
             \resumeItem{Merged into \texttt{master} on May~1,~2025 after two commits and passing all CI checks.}
@@ -200,7 +208,7 @@
     \small{\item{
      \textbf{Languages}: Python, Rust, JavaScript, Elisp, Bash, C, \LaTeX \\
      \textbf{Libraries/Frameworks}: NumPy, Matplotlib \\
-     \textbf{Tools}: Git, FitHub Actions, Terraform, Ansible, Docker
+     \textbf{Tools}: Linux, AWS, GCP, Azure, Git, GitHub Actions, Terraform, Ansible, Docker
     }}
 \end{itemize}
 
