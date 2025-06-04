@@ -1,0 +1,90 @@
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage{fontawesome5}
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\begin{document}
+\begin{center} 
+    \textbf{\Huge \scshape ALBIN BABU VARGHESE} \\ \vspace{8pt}
+    \small 
+    \faIcon{github}
+    \href{https://github.com/albus-droid}{\underline{github.com/albus-droid}}
+    \faIcon{linkedin}
+    \href{https://www.linkedin.com/in/albin-babu-varghese/}{\underline{linkedin.com/in/albin-babu-varghese}}
+    \faIcon{envelope}
+    \href{mailto:mail@albinbabuvarghese.com}{\underline{mail@albinbabuvarghese.com}}
+    \faIcon{phone}
+    \href{tel:+14162002942}{\underline{416-200-2942}}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+
+Cloud Architecture and Administration student with 5+ years of Linux experience, seeking a co-op opportunity to enhance my skills in system administration, infrastructure management, and cloud solutions while contributing to innovative projects.
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf PG Diploma in Cloud Architecture and Administration}, Seneca Polytechnic, Toronto \hfill {Expected 2025}\\
+Relevant Coursework: Terraform, Ansible, Docker, Kubernetes, AWS, Azure.
+
+{\bf PG Diploma in Applied AI Solutions Development}, George Brown College, Toronto \hfill {2024}\\
+GPA 3.39
+
+{\bf Bachelor of Technology in Computer Science}, APJ Abdul Kalam Technological University, India \hfill {2018 - 2022}
+CGPA: 7.35/10 (9.5+ in Computer Labs)
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS	
+%----------------------------------------------------------------------------------------
+\begin{rSection}{OPEN-SOURCE CONTRIBUTIONS}
+
+\begin{itemize}
+  \item \textbf{Microsoft Terminal — Triple-click Logical Line Selection} \\
+  Fixed triple-click selection to include entire wrapped logical lines instead of only a single physical line. Enhanced selection logic, added tests, and validated across scrollback buffer. Contribution merged and shipped. \href{https://github.com/microsoft/terminal/pull/18885}{PR \#18885}
+
+  \item \textbf{LensKit — Mean Average Precision Module} \\
+  Designed and implemented the MAP metric in \texttt{lenskit.metrics.ranking}, refactored rank computations, and added comprehensive tests achieving 88\% coverage. \href{https://github.com/lenskit/lkpy/pull/739}{PR \#739}
+
+  \item \textbf{Bun — TextDecoder Fatal Option Fix} \\
+  Corrected coercion logic for the \texttt{fatal} option in \texttt{TextDecoder}, ensuring proper boolean handling. Added and formatted tests for CI coverage. \href{https://github.com/oven-sh/bun/pull/19378}{PR \#19378}
+
+  \item \textbf{Matplotlib — Pie Chart Zero-Wedge Error Fix} \\
+  Added error handling to raise \texttt{ValueError} when all pie wedge sizes are zero, preventing NaN conversion errors. Included targeted test coverage. \href{https://github.com/matplotlib/matplotlib/pull/30019}{PR \#30019}
+
+  \item \textbf{Linux Kernel Rust Documentation} \\
+  Contributed documentation improvements to the Rust for Linux kernel project, enhancing clarity and usability for new contributors. \href{https://lore.kernel.org/rust-for-linux/20250527204928.5117-1-albinbabuvarghese20@gmail.com/}{Patch}
+\end{itemize}
+
+\end{rSection}
+
+
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming Languages & Python, Rust, JavaScript, Elisp, Bash, C, \LaTeX \\
+Libraries \& Frameworks & NumPy, Matplotlib \\
+Cloud Platforms & AWS, GCP, Azure \\
+DevOps \& Tools & Git, GitHub Actions, Terraform, Ansible, Docker, Linux \\
+Soft Skills & Communication, Problem Solving, Teamwork \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+%--------------------------------------------------------------------------------------
+
+\end{document}
