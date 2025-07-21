@@ -2,8 +2,8 @@
 \usepackage{fontawesome5}
 \usepackage{sectsty}
 \usepackage{enumitem}
-\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry} % Slightly tighter margins
-\sectionfont{\scshape\large} % Section title styling
+\usepackage[left=0.5in,top=0.5in,right=0.5in,bottom=0.5in]{geometry}
+\sectionfont{\scshape\large}
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
 
@@ -17,7 +17,7 @@
   \faIcon{github}\,\href{https://github.com/albus-droid}{github.com/albus-droid} \quad
   \faIcon{linkedin}\,\href{https://www.linkedin.com/in/albin-babu-varghese/}{linkedin.com/in/albin-babu-varghese} \quad
   \faIcon{envelope}\,\href{mailto:mail@albinbabuvarghese.com}{mail@albinbabuvarghese.com} \quad
-  \faIcon{phone}\,\href{tel:+14162002942}{416-200-2942} \quad
+  \faIcon{phone}\,416-200-2942
 \end{center}
 \vspace{2pt}
 \hrule
@@ -27,15 +27,15 @@
 % OBJECTIVE
 %------------------------------------------
 \begin{rSection}{OBJECTIVE}
-Aspiring Software Developer & Cloud Engineer with 5+ years of Linux experience, skilled in AI/ML, CI/CD pipelines, and cloud technologies, seeking a co-op position to deliver robust backend solutions and drive continuous improvement.
+Aspiring Software Developer Co-op with 5+ years of Linux and cloud experience, proficient in Python, C++, AI/ML, and Continuous Integration (CI) / Continuous Delivery (CD) pipelines. Skilled in developing, testing, and debugging high-quality code, collaborating on design and architecture decisions, supporting CI/CD tools, contributing to project planning, and driving continuous improvement in Agile environments.
 \end{rSection}
 
 %------------------------------------------
 % EDUCATION
 %------------------------------------------
 \begin{rSection}{EDUCATION}
-{\bf PG Diploma in Cloud Architecture & Administration}, Seneca Polytechnic, Toronto \hfill Expected 2025\\
-Relevant Coursework: Terraform, Ansible, Docker, Kubernetes, AWS, Azure.\\[4pt]
+{\bf PG Diploma in Cloud Architecture \& Administration}, Seneca Polytechnic, Toronto \hfill Expected 2025\\
+Relevant Coursework: Data Structures, Algorithms, Terraform, Ansible, Docker, Kubernetes, AWS, Azure.\\[4pt]
 {\bf PG Diploma in Applied AI Solutions Development}, George Brown College, Toronto \hfill 2024\\
 GPA: 3.39\\[4pt]
 {\bf B.Tech in Computer Science}, APJ Abdul Kalam Technological University, India \hfill 2018--2022
@@ -45,34 +45,43 @@ GPA: 3.39\\[4pt]
 % WORK EXPERIENCE
 %------------------------------------------
 \begin{rSection}{WORK EXPERIENCE}
-\begin{itemize}[left=0pt,itemsep=2pt]
-  \item {\bf Artificial Intelligence Intern}, Kinectrics, Toronto, ON \hfill May–Aug 2024\\
-        \begin{itemize}[nosep,itemsep=1pt]
-            \item Led project planning and Agile sprints, coordinating with stakeholders to define deliverables and drive continuous improvement.
-            \item Developed and containerized YOLOv5-based models for anomaly detection on high-voltage lines, improving accuracy by 30\%.
-            \item Managed ML pipeline: CVAT annotation, model training, evaluation, and Docker-based CI/CD deployment.
-            \item Implemented automated CI/CD pipelines for model integration, testing, and deployment using GitHub Actions and Docker.
+\begin{itemize}[left=0pt,itemsep=4pt]
+  \item {\bf Artificial Intelligence Intern}, Kinectrics, Toronto, ON \hfill May--Aug 2024\\
+        \begin{itemize}[nosep,itemsep=2pt]
+            \item Developed, tested, and debugged Python and Docker-based code for YOLOv5 anomaly detection models, improving detection accuracy by 30\%.
+            \item Collaborated on system design and architecture discussions, defined technical specifications, and authored test plans for ML pipeline components.
+            \item Supported and enhanced CI/CD pipelines using GitHub Actions, automating model integration, unit testing, and container deployments.
+            \item Participated in Agile ceremonies, gathered requirements, and coordinated with cross-functional teams to deliver sprint goals.
         \end{itemize}
-  \item {\bf Developer Intern}, Fleming, Remote \hfill Jan–Jul 2023\\
-        \begin{itemize}[nosep,itemsep=1pt]
-            \item Built Android app features in Java/Kotlin using MVVM and Jetpack; improved UX following Material Design.
-            \item Integrated REST APIs with offline caching (Room, LiveData) and implemented JUnit/Espresso tests, raising coverage by 25\%.
-            \item Configured CI/CD pipelines with GitHub Actions to automate builds, tests, and Play Store deployments.
-            \item Collaborated in Agile ceremonies using Git, Jira, and peer code reviews; reduced crash rate by 15\% through profiling.
+  \item {\bf Developer Intern}, Fleming, Remote \hfill Jan--Jul 2023\\
+        \begin{itemize}[nosep,itemsep=2pt]
+            \item Developed and tested Android application features in Java/Kotlin with MVVM and Jetpack; reduced bugs by 20\% through Test-Driven Development.
+            \item Debugged RESTful API integrations and implemented offline caching strategies (Room, LiveData) to improve app reliability.
+            \item Wrote unit (JUnit) and UI (Espresso) tests; improved code coverage by 25\% and ensured consistent quality releases.
+            \item Maintained CI/CD pipelines with GitHub Actions, automating builds, tests, and Play Store deployments.
         \end{itemize}
 \end{itemize}
 \end{rSection}
 
 %------------------------------------------
-% OPEN-SOURCE
+% OPEN-SOURCE CONTRIBUTIONS
 %------------------------------------------
 \begin{rSection}{OPEN-SOURCE CONTRIBUTIONS}
 \begin{itemize}[left=0pt,itemsep=2pt]
-  \item \textbf{Microsoft Terminal}: Fixed triple-click logical line selection; merged PR \#18885.
-  \item \textbf{LensKit}: Implemented MAP metric; refactored ranking; 88\% test coverage (PR \#739).
-  \item \textbf{Bun}: Corrected TextDecoder fatal option logic; added CI tests (PR \#19378).
-  \item \textbf{Matplotlib}: Handled zero-wedge pie charts to prevent NaN (PR \#30019).
-  \item \textbf{Rust-for-Linux}: Enhanced kernel Rust documentation; accepted patch in LKML.
+  \item \textbf{Microsoft Terminal — Triple-click Logical Line Selection}\\
+        Fixed triple-click selection to include entire wrapped logical lines instead of only a single physical line. Enhanced selection logic, added tests, and validated across scrollback buffer. Contribution merged and shipped. \href{https://github.com/microsoft/terminal/pull/18885}{PR \#18885}
+
+  \item \textbf{LensKit — Mean Average Precision Module}\\
+        Designed and implemented the MAP metric in \texttt{lenskit.metrics.ranking}, refactored rank computations, and added comprehensive tests achieving 88\% coverage. \href{https://github.com/lenskit/lkpy/pull/739}{PR \#739}
+
+  \item \textbf{Bun — TextDecoder Fatal Option Fix}\\
+        Corrected coercion logic for the \texttt{fatal} option in \texttt{TextDecoder}, ensuring proper boolean handling. Added and formatted tests for CI coverage. \href{https://github.com/oven-sh/bun/pull/19378}{PR \#19378}
+
+  \item \textbf{Matplotlib — Pie Chart Zero-Wedge Error Fix}\\
+        Added error handling to raise \texttt{ValueError} when all pie wedge sizes are zero, preventing NaN conversion errors. Included targeted test coverage. \href{https://github.com/matplotlib/matplotlib/pull/30019}{PR \#30019}
+
+  \item \textbf{Linux Kernel Rust Documentation}\\
+        Contributed documentation improvements to the Rust for Linux kernel project, enhancing clarity and usability for new contributors. \href{https://lore.kernel.org/rust-for-linux/20250527204928.5117-1-albinbabuvarghese20@gmail.com/}{Patch}
 \end{itemize}
 \end{rSection}
 
@@ -81,32 +90,37 @@ GPA: 3.39\\[4pt]
 %------------------------------------------
 \begin{rSection}{PROJECTS}
 \begin{itemize}[left=0pt,itemsep=4pt]
-  \item \textbf{Food Delivery Backend (Go, MongoDB, PostgreSQL, Redis, Nginx)}\\
-        Designed a microservice-style REST API in Go; hybrid storage (Postgres, Mongo, Redis); Nginx load balancing; Dockerized services; documented with UML diagrams; implemented health checks and monitoring dashboards; leveraged cloud (AWS) for deployment.
+  \item \textbf{Food Delivery Backend (Go, MongoDB, PostgreSQL, Redis, Nginx, AWS)}\\
+        Developed, tested, and debugged Go microservices; collaborated on design and architecture of domain services; configured Nginx for load balancing and SSL termination; defined health checks, logging, and monitoring; supported and enhanced CI/CD pipelines using Docker and GitHub Actions; contributed to project planning and requirement gathering.
+
   \item \textbf{Pokedex Object Detection App (Python, Streamlit, YOLOv5)}\\
-        Developed a Streamlit app with fine-tuned YOLOv5 for real-time Pokémon detection; integrated PokeAPI for dynamic data; Dockerized and deployed on AWS ECS Fargate; created unit/integration tests.
+        Developed, tested, and debugged Python code for real-time object detection; integrated PokeAPI for dynamic data retrieval; containerized with Docker; deployed on AWS ECS Fargate; supported CI/CD with automated builds and tests; created detailed test plans and unit/integration tests.
 \end{itemize}
 \end{rSection}
+
 %------------------------------------------
-% VOLUNTEER & SKILLS
+% VOLUNTEER EXPERIENCE
 %------------------------------------------
 \begin{rSection}{VOLUNTEER EXPERIENCE}
 \begin{itemize}[left=0pt,itemsep=2pt]
   \item {\bf Kerala Flood Relief Volunteer}, Ernakulam, Kerala \hfill Aug 2018\\
-        Organized supply distribution and coordinated teams during flood recovery.
-  \item {\bf Dialysis Patient Support Website}, APJ Abdul Kalam Technological University \hfill Mar–May 2021\\
-        Built a responsive React/Node.js/MongoDB app for dialysis patient registration and crowdfunding donation processing.
+        Gathered requirements for supply distribution, coordinated volunteer teams, and liaised with local authorities.
+
+  \item {\bf Dialysis Patient Support Website}, APJ Abdul Kalam Technological University \hfill Mar--May 2021\\
+        Defined technical specifications and developed a React/Node.js app; debugged server-side logic; integrated MongoDB and payment gateway for crowdfunding.
 \end{itemize}
 \end{rSection}
 
+%------------------------------------------
+% SKILLS
+%------------------------------------------
 \begin{rSection}{SKILLS}
 \begin{tabular}{ @{} >{\bfseries}l @{} p{4.2in} }
-Programming & Go, Python, Java, C++, Kotlin, JavaScript, Bash, C, \LaTeX \\
-Cloud & AWS (EKS, ECS, RDS, S3), GCP, Azure \\
-DevOps & Docker, Kubernetes, Terraform, Ansible, GitHub Actions\\
-Databases & PostgreSQL, MongoDB, Redis \\
-Frameworks & Android SDK, Streamlit, React, YOLOv5 \\
-Soft Skills & Communication, Collaboration, Problem Solving \\
+Programming Languages & Python, Java, C++, Go, Kotlin, JavaScript, Bash, C, \LaTeX \\
+Data Structures & Arrays, Linked Lists, Trees, Hash Tables, Graphs, Queues, Stacks \\
+Cloud Platforms & AWS (EKS, ECS, RDS, S3), GCP, Azure \\
+DevOps & Docker, Kubernetes, Terraform, Ansible, GitHub Actions, Continuous Integration (CI), Continuous Delivery (CD)\\
+
 \end{tabular}
 \end{rSection}
 
